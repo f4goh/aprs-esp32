@@ -33,7 +33,7 @@ Simply connect the ESP32 via USB, select the appropriate firmware variant, choos
 
 The initial Wi-Fi configuration can be performed using a smartphone, tablet, or computer. When the **MENU button is pressed before powering on the ESP32**, the device starts an open Wi-Fi Access Point named **`APRS-POCKET`** at **192.168.4.1**, with no password. Connect to this network and open **192.168.4.1** in a web browser to configure the Wi-Fi SSID and password.
 
-After restarting, the ESP32 connects to the configured Wi-Fi network, and its assigned IP address is displayed in the Serial Monitor. The configuration can also be modified later by accessing this IP address from a web browser.
+After restarting, the ESP32 connects to the configured Wi-Fi network, and its assigned IP address is displayed in the Serial Monitor. The configuration can also be modified later by accessing this IP address from a web browser by **pressing menu button**.
 
 ![menu01](images/menu01.png)
 ![menu02](images/menu02.png)
