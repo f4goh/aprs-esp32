@@ -1,0 +1,16 @@
+{
+  "name": "APRS-ESP32",
+  "version": "2026.08.0-dev",
+  "home_assistant_domain": "APRS ESP32",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",      
+      "parts": [
+        { "path": "../firmwares/APRS-ESP32/bootloader.bin", "offset": 4096 },
+        { "path": "../firmwares/APRS-ESP32/partitions.bin", "offset": 32768 },
+        { "path": "../firmwares/APRS-ESP32/firmware.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
