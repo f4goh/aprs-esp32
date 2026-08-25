@@ -2,6 +2,8 @@
 
 This project is a standalone APRS tracker based on the ESP32 and a GPS module. It can upload your position over a Wi-Fi access point when APRSDroid is not available, providing a simple autonomous solution that does not require a smartphone or any application to be running. Your position can then be viewed on [APRS.fi](https://aprs.fi/).
 
+![APRS-ESP32 spot](images/spot.png)
+
 ## Pinout
 
 | Component   | ESP32 Pin | Description              |
