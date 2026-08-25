@@ -80,7 +80,7 @@ MQTT : 192.168.1.20
 08:45:14
 ```
 
-## APRS Configuration
+## APRS Configuration (Setup)
 
 The APRS configuration page allows you to customize the information transmitted by the tracker.
 
@@ -229,7 +229,7 @@ Configuration terminee
 08:43:43
 ```
 
-## ESP32 System Information
+## ESP32 System Information (Info)
 
 The **Info** page provides useful information about the ESP32 hardware and the current state of the device:
 
