@@ -1,4 +1,4 @@
-# aprs-esp32
+# Aprs-esp32
 
 This project is a standalone APRS tracker based on the ESP32 and a GPS module. It can upload your position over a Wi-Fi access point when APRSDroid is not available, providing a simple autonomous solution that does not require a smartphone or any application to be running. Your position can then be viewed on [APRS.fi](https://aprs.fi/).
 
@@ -95,13 +95,23 @@ The APRS configuration page allows you to customize the information transmitted 
 
 These settings control how the ESP32 identifies itself and how its position is transmitted through APRS. The resulting position can be monitored on **APRS.fi**.
 
+## Beacon Interval
+
+The beacon interval is configured using **minutes** and **seconds**.
+
+- If **minutes > 0**, a beacon is transmitted at the configured minute/second interval. For example, `2 min 30 sec` means that a frame is transmitted every **2 minutes and 30 seconds**.
+- If **minutes = 0**, the interval is based only on the configured seconds. For example, `0 min 30 sec` means that a frame is transmitted every **30 seconds**.
+
+The interval is therefore calculated as a modulo time period, allowing the tracker to transmit its APRS position automatically at the configured frequency.
+
+
 ![menu03](images/menu03.png)
 
 ### Additional APRS Settings
 
 The lower part of the configuration page provides additional APRS and network settings:
 
-- **SmartBeaconing**: Enables dynamic beacon intervals based on the tracker's movement.
+- **SmartBeaconing**: Enables dynamic beacon intervals based on the tracker's movement (not supported yet).
 - **Compressed**: Enables compressed APRS position reporting, reducing the amount of data transmitted.
 - **Altitude**: Adds the GPS altitude to the APRS position report when enabled.
 - **Display**: Enables or disables the connected display.
